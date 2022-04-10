@@ -45,7 +45,7 @@
 
                 
                     <div class="form-group form-group-textarea mb-md-0">
-                        <textarea class="form-control @error('comentar') is-invalid @enderror" name="comentar" placeholder="Pesan anda terhadap kami">{{ old('comentar')}}</textarea>
+                        <textarea class="form-control @error('comentar') is-invalid @enderror" name="comentar" placeholder="Pesan anda terhadap kami" cols="50">{{ old('comentar')}}</textarea>
                         @error('comentar')
                         <div class="invalid-feedback">
                             {{$message}}

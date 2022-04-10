@@ -1,4 +1,4 @@
-@extends('layout.LayHome')
+@extends('Layout.LayHome')
 
 
 {{-- @section('gambar_home')
@@ -96,7 +96,7 @@ $('.lihat').on('click',function(){
 
 
 
-@section('client')
+@section('content2')
 <div class="py-5">
     <div class="container">
         <div class="row">

@@ -29,7 +29,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard_admin">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url('/dashboard_admin')}}">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -41,7 +41,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="/dashboard_admin">
+                <a class="nav-link" href="{{url('/dashboard_admin')}}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -56,15 +56,15 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/dashboard_admin" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="{{url('/dashboard_admin')}}" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Menu Home</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">isi</h6>
-                        <a class="collapse-item" href="/berita_admin">berita</a>
-                        <a class="collapse-item" href="/sponsor_admin">sponsor</a>
+                        <a class="collapse-item" href="{{url('/berita_admin')}}">berita</a>
+                        <a class="collapse-item" href="{{url('/sponsor_admin')}}">sponsor</a>
                     </div>
                 </div>
             </li>
@@ -78,10 +78,10 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">isi</h6>
-                        <a class="collapse-item" href="/visi_dan_misi_admin">Visi Misi</a>
-                        <a class="collapse-item" href="/struktur_organisasi_admin">Struktur Organisasi</a>
-                        <a class="collapse-item" href="/tugas_dan_fungsi_admin">Tugas dan Fungsi</a>
-                        <a class="collapse-item" href="/bidang_admin">Bidang</a>
+                        <a class="collapse-item" href="{{url('/visi_dan_misi_admin')}}">Visi Misi</a>
+                        <a class="collapse-item" href="{{url('/struktur_organisasi_admin')}}">Struktur Organisasi</a>
+                        <a class="collapse-item" href="{{url('/tugas_dan_fungsi_admin')}}">Tugas dan Fungsi</a>
+                        <a class="collapse-item" href="{{url('/bidang_admin')}}">Bidang</a>
                     </div>
                 </div>
             </li>
@@ -93,7 +93,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="/pengumuman_admin">
+                <a class="nav-link" href="{{url('/pengumuman_admin')}}">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>pengumuman</span>
                 </a>
@@ -101,14 +101,14 @@
 
                 <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="/galeri_admin">
+                <a class="nav-link" href="{{url('/galeri_admin')}}">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Galeri</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="/contact_admin">
+                <a class="nav-link" href="{{url('/contact_admin')}}">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Comments</span></a>
             </li>
@@ -354,7 +354,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="/logout">Logout</a>
+                    <a class="btn btn-primary" href="{{url('/logout')}}">Logout</a>
                 </div>
             </div>
         </div>

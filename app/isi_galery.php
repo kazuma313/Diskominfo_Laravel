@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class isi_galery extends Model
+class Isi_galery extends Model
 {
     //
     protected $fillable = ['galeri_id','jenis', 'letak'];

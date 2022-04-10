@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class fungsi extends Model
+class Fungsi extends Model
 {
     //
     protected $fillable =['no','fungsi'];

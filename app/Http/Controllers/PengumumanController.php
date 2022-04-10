@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\pengumuman;
+use App\Pengumuman;
 use Illuminate\Http\Request;
 
 class PengumumanController extends Controller
@@ -15,7 +15,7 @@ class PengumumanController extends Controller
     public function index()
     {
         //
-        $pengumuman = pengumuman::all();
+        $pengumuman = Pengumuman::all();
         return View('pengumuman', compact('pengumuman'));
     }
 
@@ -27,7 +27,7 @@ class PengumumanController extends Controller
     public function create()
     {
         //
-        $pengumuman = pengumuman::all();
+        $pengumuman = Pengumuman::all();
         return View('admin.pengumuman', compact('pengumuman'));
     }
 
@@ -47,7 +47,7 @@ class PengumumanController extends Controller
         ]);
 
         // cara 3
-        pengumuman::create($request->all());
+        Pengumuman::create($request->all());
         return redirect('/pengumuman_admin')->with('status', 'data berita berhasil diinput');
     }
 
@@ -57,7 +57,7 @@ class PengumumanController extends Controller
      * @param  \App\pengumuman  $pengumuman
      * @return \Illuminate\Http\Response
      */
-    public function show(pengumuman $pengumuman)
+    public function show(Pengumuman $pengumuman)
     {
         //
     }
@@ -68,7 +68,7 @@ class PengumumanController extends Controller
      * @param  \App\pengumuman  $pengumuman
      * @return \Illuminate\Http\Response
      */
-    public function edit(pengumuman $pengumuman)
+    public function edit(Pengumuman $pengumuman)
     {
         //
         return view('admin.edit_pengumuman', compact('pengumuman'));
@@ -81,7 +81,7 @@ class PengumumanController extends Controller
      * @param  \App\pengumuman  $pengumuman
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, pengumuman $pengumuman)
+    public function update(Request $request, Pengumuman $pengumuman)
     {
         //
         $request->validate([
@@ -90,7 +90,7 @@ class PengumumanController extends Controller
             'pengumuman' => 'required'
         ]);
         
-        pengumuman::where('id', $pengumuman->id)
+        Pengumuman::where('id', $pengumuman->id)
             ->update([
                 'judul' => $request->judul,
                 'sub_judul' => $request->sub_judul,
@@ -106,10 +106,10 @@ class PengumumanController extends Controller
      * @param  \App\pengumuman  $pengumuman
      * @return \Illuminate\Http\Response
      */
-    public function destroy(pengumuman $pengumuman)
+    public function destroy(Pengumuman $pengumuman)
     {
         //
-        pengumuman::destroy($pengumuman->id);
+        Pengumuman::destroy($pengumuman->id);
         return redirect('/pengumuman_admin')->with('status', 'data berita berhasil dihapus');
     }
 }

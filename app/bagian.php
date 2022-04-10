@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class bagian extends Model
+class Bagian extends Model
 {
     //
     public function fungsis(){

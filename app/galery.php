@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class galery extends Model
+class Galery extends Model
 {
     //
     protected $fillable = ['nama'];

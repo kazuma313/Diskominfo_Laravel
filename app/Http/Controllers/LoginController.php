@@ -38,7 +38,7 @@ class LoginController extends Controller
     public function store(Request $request)
     {
         //
-        // dd($request->all());
+        // dd($request->all());        
         if(Auth::attempt($request->only('name','password'))){
             return redirect('/dashboard_admin');
         }

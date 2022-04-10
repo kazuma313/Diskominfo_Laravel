@@ -109,6 +109,7 @@
     
     @yield('content')
 
+    @yield('content2')
 
 
     <footer class="footer py-4">
